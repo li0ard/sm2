@@ -19,7 +19,7 @@ export const SM2p256 = weierstrass({
 export const SIZE = 32;
 
 /** Default signer identifier */
-export const DEFAULT_UID = new TextEncoder().encode("1234567812345678");
+export const DEFAULT_UID: TRet<Uint8Array> = new TextEncoder().encode("1234567812345678");
 
 /** Cipher mode */
 export enum CipherMode {
