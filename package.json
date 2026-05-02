@@ -1,0 +1,38 @@
+{
+  "name": "@li0ard/sm2",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "author": "li0ard",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/li0ard/sm2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/li0ard/sm2/issues"
+  },
+  "homepage": "https://github.com/li0ard/sm2#readme",
+  "description": "SM2 curves and DSA in pure TypeScript",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist/ && tsc --project tsconfig.build.json",
+    "docs": "typedoc --options .config/typedoc/config.cjs"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typedoc": "^0.28.19"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@li0ard/sm3": "^0.1.1",
+    "@noble/curves": "^2.2.0"
+  },
+  "files": ["dist"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["sm2", "crypto", "shangmi"]
+}
